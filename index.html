@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Avataar</title>
+  <script>
+    function graphic()
+    {
+      a=document.getElementById("clothe_type").value;
+      gr=document.getElementById("clothe_graphic_type").disabled;
+      if(a!=="GRAPHIC_SHIRT")
+      {
+        gr= true;
+      }
+      else
+      {
+        gr= false;
+      }
+    }
+  </script>
+</head>
+
+<body style="background-color: cornflowerblue;height: 1900px;">
+
+  <div class="container">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light" style="margin-top: 50px;">
+      <a class="navbar-brand" href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDQaEXf51KtdMsOqYzUUQ7gVjQrNs7X2NI8g&usqp=CAU"
+          width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        Avataar
+      </a>
+    </nav>
+    <form method="POST" style="background-color:rgb(255, 200, 148);padding: 30px;">
+      <br><br><label for="skin_colors">Name</label>
+      <input class="form-control mr-sm-2" type="search" placeholder="Enter your name" name="naam" id="naam"
+        aria-label="Search">
+        <br>
+      <div class="form-group">
+        <label for="skin_colors">Enter Skin Colour for Avataar</label>
+        <select class="form-control custom-select" name="skin_color" id="skin_color">
+          <option value="LIGHT">LIGHT</option>
+          <option value="DARK_BROWN">DARK BROWN</option>
+          <option value="TANNED">TANNED</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="hair_color">Enter Hair Colour for Avataar</label>
+        <select class="form-control custom-select" name="hair_color" id="hair_color">
+          <option value="AUBURN">AUBURN</option>
+          <option value="BLACK">BLACK</option>
+          <option value="BROWN">BROWN</option>
+          <option value="BLONDE">BLONDE</option>
+          <option value="BLONDE_GOLDEN">BLONDE GOLDEN</option>
+          <option value="BROWN_DARK">BROWN DARK</option>
+          <option value="PASTEL_PINK">PASTEL PINK</option>
+          <option value="PLATINUM">PLATINUM</option>
+          <option value="RED">RED</option>
+          <option value="SILVER_GRAY">SILVER GREY</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="Facial">Enter Facial Hair Type for Avataar</label>
+        <select class="form-control custom-select" name="facial_hair" id="facial_hair">
+          <option value="DEFAULT">DEFAULT</option>
+          <option value="BEARD_LIGHT">BEARD LIGHT</option>
+          <option value="BEARD_MAJESTIC">BEARD MAJESTIC</option>
+          <option value="BEARD_MAJESTIC">BEARD MEDIUM</option>
+          <option value="MOUSTACHE_FANCY">MOUSTACHE FANCY</option>
+          <option value="MOUSTACHE_MAGNUM">MOUSTACHE MAGNUM</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="beard_color">Enter Facial Hair Colour for Avataar</label>
+        <select class="form-control custom-select" name="beard_color" id="beard_color">
+          <option value="AUBURN">AUBURN</option>
+          <option value="BLACK">BLACK</option>
+          <option value="BROWN">BROWN</option>
+          <option value="BLONDE">BLONDE</option>
+          <option value="BLONDE_GOLDEN">BLONDE GOLDEN</option>
+          <option value="BROWN_DARK">BROWN DARK</option>
+          <!-- <option>PASTEL PINK</option> -->
+          <option value="PLATINUM">PLATINUM</option>
+          <option value="RED">RED</option>
+          <!-- <option>SILVER GREY</option> -->
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="top_type">Enter Top Type for Avataar</label>
+        <select class="form-control custom-select" name="top_type" id="top_type">
+          <option value="EYE_PATCH">EYE PATCH</option>
+          <option value="HAT">HAT</option>
+          <option value="HIJAB">HIJAB</option>
+          <option value="LONG_HAIR_BIG_HAIR">LONG HAIR BIG HAIR</option>
+          <option value="LONG_HAIR_BOB">LONG HAIR BOB</option>
+          <option value="LONG_HAIR_BUN">LONG HAIR BUN</option>
+          <option value="LONG_HAIR_CURLY">LONG HAIR CURLY</option>
+          <option value="LONG_HAIR_CURVY">LONG HAIR CURVY</option>
+          <option value="LONG_HAIR_DREADS">LONG HAIR DREADS</option>
+          <option value="LONG_HAIR_FRIDA">LONG HAIR FRIDA</option>
+          <option value="LONG_HAIR_FRO">LONG HAIR FRO</option>
+          <option value="LONG_HAIR_FRO_BAND">LONG HAIR FRO BAND</option>
+          <option value="LONG_HAIR_MIA_WALLACE">LONG HAIR MIA WALLACE</option>
+          <option value="LONG_HAIR_NOT_TOO_LONG">LONG HAIR NOT TOO LONG</option>
+          <option value="LONG_HAIR_SHAVED_SIDES">LONG HAIR SHAVED SIDES</option>
+          <option value="LONG_HAIR_STRAIGHT">LONG HAIR STRAIGHT</option>
+          <option value="LONG_HAIR_STRAIGHT2">LONG HAIR STRAIGHT2</option>
+          <option value="LONG_HAIR_STRAIGHT2">LONG HAIR STRAIGHT STRAND</option>
+          <option value="NO_HAIR">NO HAIR</option>
+          <option value="SHORT_HAIR_DREADS_01">SHORT HAIR DREADS 01</option>
+          <option value="SHORT_HAIR_DREADS_02">SHORT HAIR DREADS 02</option>
+          <option value="SHORT_HAIR_FRIZZLE">SHORT HAIR FRIZZLE</option>
+          <option value="SHORT_HAIR_SHAGGY_MULLET">SHORT HAIR SHAGGY MULLET</option>
+          <option value="SHORT_HAIR_SHORT_CURLY">SHORT HAIR SHORT CURLY</option>
+          <option value="SHORT_HAIR_SHORT_FLAT">SHORT HAIR SHORT FLAT</option>
+          <option value="SHORT_HAIR_SHORT_ROUND">SHORT HAIR SHORT ROUND</option>
+          <option value="SHORT_HAIR_SHORT_WAVED">SHORT HAIR SHORT WAVED</option>
+          <option value="SHORT_HAIR_SIDES">SHORT HAIR SIDES</option>
+          <option value="SHORT_HAIR_THE_CAESAR">SHORT HAIR THE CAESAR</option>
+          <option value="SHORT_HAIR_THE_CAESAR_SIDE_PART">SHORT HAIR THE CAESAR SIDE PART</option>
+          <option value="TURBAN">TURBAN</option>
+          <option value="WINTER_HAT1">WINTER HAT1</option>
+          <option value="WINTER_HAT2">WINTER HAT2</option>
+          <option value="WINTER_HAT3">WINTER HAT3</option>
+          <option value="WINTER_HAT4">WINTER HAT4</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="hat_colors">Enter Hat Colour for Avataar</label>
+        <select class="form-control custom-select" name="hat_color" id="hat_color">
+          <option value="BLACK">BLACK</option>
+          <option value="BLUE_01">BLUE 1</option>
+          <option value="BLUE_02">BLUE 2</option>
+          <option value="BLUE_03">BLUE 3</option>
+          <option value="GRAY_01">GREY 1</option>
+          <option value="GRAY_02">GREY 2</option>
+          <option value="HEATHER">HEATHER</option>
+          <option value="PASTEL_BLUE">PASTEL BLUE</option>
+          <option value="PASTEL_GREEN">PASTEL GREEN</option>
+          <option value="PASTEL_ORANGE">PASTEL ORANGE</option>
+          <option value="PASTEL_RED">PASTEL RED</option>
+          <option value="PASTEL_YELLOW">PASTEL YELLOW</option>
+          <option value="PINK">PINK</option>
+          <option value="RED">RED</option>
+          <option value="WHITE">WHITE</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="mouth_types">Enter Mouth Type for Avataar</label>
+        <select class="form-control custom-select" name="mouth_type" id="mouth_type">
+          <option value="DEFAULT">DEFAULT</option>
+          <option value="CONCERNED">CONCERNED</option>
+          <option value="DISBELIEF">DISBELIEF</option>
+          <option value="EATING">EATING</option>
+          <option value="GRIMACE">GRIMACE</option>
+          <option value="SAD">SAD</option>
+          <option value="SCREAM_OPEN">SCREAM OPEN</option>
+          <option value="SERIOUS">SERIOUS</option>
+          <option value="SMILE">SMILE</option>
+          <option value="TONGUE">TONGUE</option>
+          <option value="TWINKLE">TWINKLE</option>
+          <option value="VOMIT">VOMIT</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="eyes_types">Enter Eye Type for Avataar</label>
+        <select class="form-control custom-select" name="eye_type" id="eye_type">
+          <option value="DEFAULT">DEFAULT</option>
+          <option value="CLOSED">CLOSED</option>
+          <option value="CRY">CRY</option>
+          <option value="DIZZY">DIZZY</option>
+          <option value="EYE_ROLL">EYE ROLL</option>
+          <option value="HAPPY">HAPPY</option>
+          <option value="HEARTS">HEARTS</option>
+          <option value="SIDE">SIDE</option>
+          <option value="SQUINT">SQUINT</option>
+          <option value="SURPRISED">SURPRISED</option>
+          <option value="WINK">WINK</option>
+          <option value="WINK_WACKY">WINK WACKY</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="eyebrows">Enter Eyebrow Type for Avataar</label>
+        <select class="form-control custom-select" name="eyebrow_type" id="eyebrow_type">
+          <option value="DEFAULT">DEFAULT</option>
+          <option value="DEFAULT_NATURAL">DEFAULT NATURAL</option>
+          <option value="ANGRY">ANGRY</option>
+          <option value="ANGRY_NATURAL">ANGRY NATURAL</option>
+          <option value="FLAT_NATURAL">FLAT NATURAL</option>
+          <option value="FROWN_NATURAL">FROWN NATURAL</option>
+          <option value="RAISED_EXCITED">RAISED EXCITED</option>
+          <option value="RAISED_EXCITED_NATURAL">RAISED EXCITED NATURAL</option>
+          <option value="SAD_CONCERNED">SAD CONCERNED</option>
+          <option value="SAD_CONCERNED_NATURAL">SAD CONCERNED NATURAL</option>
+          <option value="UNI_BROW_NATURAL">UNI_BROW_NATURAL</option>
+          <option value="UP_DOWN">UP DOWN</option>
+          <option value="UP_DOWN_NATURAL">UP DOWN NATURAL</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="nose">Enter Nose Type for Avataar</label>
+        <select class="form-control custom-select" name="nose_type" id="nose_type">
+          <option value="DEFAULT">DEFAULT</option>
+        </select>
+      </div>
+      <br>
+        <div class="form-group">
+          <label for="accessories">Enter Accessory Type for Avataar</label>
+          <select class="form-control custom-select" name="accessories_type" id="accessories_type">
+            <option value="DEFAULT">DEFAULT</option>
+            <option value="KURT">KURT</option>
+            <option value="PRESCRIPTION_01">PRESCRIPTION 1</option>
+            <option value="PRESCRIPTION_02">PRESCRIPTION 2</option>
+            <option value="ROUND">ROUND</option>
+            <option value="SUNGLASSES">SUNGLASSES</option>
+            <option value="WAYFARERS">WAYFARERS</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="cloth_types">Enter Cloth Type for Avataar</label>
+          <select onchange="graphic()" class="form-control custom-select" name="clothe_type" id="clothe_type">
+            <option value="BLAZER_SHIRT">BLAZER SHIRT</option>
+            <option value="BLAZER_SWEATER">BLAZER SWEATER</option>
+            <option value="COLLAR_SWEATER">COLLAR SWEATER</option>
+            <option value="GRAPHIC_SHIRT">GRAPHIC SHIRT</option>
+            <option value="HOODIE">HOODIE</option>
+            <option value="OVERALL">OVERALL</option>
+            <option value="SHIRT_CREW_NECK">SHIRT CREW NECK</option>
+            <option value="SHIRT_SCOOP_NECK">SHIRT SCOOP NECK</option>
+            <option value="SHIRT_V_NECK">SHIRT V NECK</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="cloth_color">Enter Cloth Color for Avataar</label>
+          <select class="form-control custom-select" name="clothe_color" id="clothe_color">
+            <option value="BLACK">BLACK</option>
+            <option value="BLUE_01">BLUE 1</option>
+            <option value="BLUE_02">BLUE 2</option>
+            <option value="BLUE_03">BLUE 3</option>
+            <option value="GRAY_01">GREY 1</option>
+            <option value="GRAY_02">GREY 2</option>
+            <option value="HEATHER">HEATHER</option>
+            <option value="PASTEL_BLUE">PASTEL BLUE</option>
+            <option value="PASTEL_GREEN">PASTEL GREEN</option>
+            <option value="PASTEL_ORANGE">PASTEL ORANGE</option>
+            <option value="PASTEL_RED">PASTEL RED</option>
+            <option value="PASTEL_YELLOW">PASTEL YELLOW</option>
+            <option value="PINK">PINK</option>
+            <option value="RED">RED</option>
+            <option value="WHITE">WHITE</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="cloth_graphic">Enter Cloth Graphic for Avataar</label>
+          <select class="form-control custom-select" name="clothe_graphic_type" id="clothe_graphic_type">
+            <option value="BAT">BAT</option>
+            <option value="BEAR">BEAR</option>
+            <option value="CUMBIA">CUMBIA</option>
+            <option value="DEER">DEER</option>
+            <option value="DIAMOND">DIAMOND</option>
+            <option value="HOLA">HOLA</option>
+            <option value="PIZZA">PIZZA</option>
+            <option value="RESIST">RESIST</option>
+            <option value="SELENA">SELENA</option>
+            <option value="SKULL">SKULL</option>
+            <option value="SKULL_OUTLINE">SKULL OUTLINE</option>
+          </select>
+        </div>
+        <br>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+    </form>
+  </div>
+            <script>
+            function graphic()
+            {
+              a=document.getElementById("clothe_type").value;
+              gr=document.getElementById("clothe_graphic_type");
+              if(a!=="GRAPHIC_SHIRT")
+              {
+                gr.disabled=true;
+                gr.title="Choose graphic shirt in cloth type";
+              }
+              else
+              {
+                gr.disabled= false;
+                gr.removeAttribute("title");
+              }
+            }
+            graphic();
+          </script>
+  </body>
+  </html>
